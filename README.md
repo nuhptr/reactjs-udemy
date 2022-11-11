@@ -17,6 +17,7 @@ Repository Learn React Js
 - React Router
 - Redux
 - React + Typescript
+- etc.
 
 ## Link
 
