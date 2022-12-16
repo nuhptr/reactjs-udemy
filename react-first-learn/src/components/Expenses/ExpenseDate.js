@@ -1,6 +1,4 @@
-import React from "react";
-
-import "./ExpenseDate.css";
+import "../Expenses/ExpenseDate.css";
 
 export default function ExpenseDate(props) {
   return (
