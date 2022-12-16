@@ -3,8 +3,10 @@
 ```sh
 Repository Learn ReactJS
 ```
+
 ## List Topic
 
+```sh
 - Basic
 - State and Events
 - Rendering List and Conditional Content
@@ -18,6 +20,7 @@ Repository Learn ReactJS
 - Redux
 - React + Typescript
 - etc.
+```
 
 ## Link
 
