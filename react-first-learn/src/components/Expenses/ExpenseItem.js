@@ -6,6 +6,7 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 
 export default function ExpenseItem(props) {
+  // TODO: Using state from useState()
   const [title, setTitle] = useState(props.title);
   console.log("ExpenseItem evaluated by React");
 
