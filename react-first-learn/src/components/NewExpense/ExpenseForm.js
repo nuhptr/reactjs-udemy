@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./ExpenseForm.css";
 
-export default function ExpenseForm() {
+export default function ExpenseForm(props) {
   // TODO: Using state from useState() for multipleVariabel
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
@@ -64,7 +64,7 @@ export default function ExpenseForm() {
       date: new Date(enteredDate),
     };
 
-    console.log(expenseData);
+    props.onSaveExpenseData(expenseData);
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
@@ -77,7 +77,7 @@ export default function ExpenseForm() {
           <label htmlFor="title">Title</label>
           <input
             type="text"
-            value={enteredTitle ?? ""}
+            value={enteredTitle}
             onChange={titleChangeHandler}
           />
         </div>
@@ -87,7 +87,7 @@ export default function ExpenseForm() {
             type="number"
             min="0.01"
             step="0.01"
-            value={enteredAmount ?? ""}
+            value={enteredAmount}
             onChange={amountChangeHandler}
           />
         </div>
@@ -97,7 +97,7 @@ export default function ExpenseForm() {
             type="date"
             min="2019-01-01"
             max="2022-12-31"
-            value={enteredDate ?? ""}
+            value={enteredDate}
             onChange={dateChangeHandler}
           />
         </div>
